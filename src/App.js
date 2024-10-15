@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css'; // Importing the CSS file
 
 function App() {
   // Mock user data for login
@@ -71,34 +72,37 @@ function App() {
     <div style={{ padding: '20px' }}>
       {/* Login Form (MANDATORY before accessing events) */}
       {!user ? (
-        <div>
+        <div className="login-form">
           <h2>Login</h2>
           <input
+            className="input-field"
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
+            className="input-field"
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={handleLogin}>Login</button>
-          {loginError && <p style={{ color: 'red' }}>{loginError}</p>}
+          <button className="btn" onClick={handleLogin}>Login</button>
+          {loginError && <p className="error-message">{loginError}</p>}
         </div>
       ) : (
         <>
           <div>
             <h2>Welcome, {user.email}</h2>
-            <button onClick={() => setUser(null)}>Logout</button>
+            <button className="btn" onClick={() => setUser(null)}>Logout</button>
           </div>
 
           {/* Event List */}
           <div>
             <h1>Events</h1>
             <input
+              className="input-field"
               type="text"
               placeholder="Search events..."
               value={search}
@@ -121,7 +125,7 @@ function App() {
                       <p>Price: ${event.price}</p>
                       <p>Available Seats: {event.availableSeats}</p>
                       {event.availableSeats > 0 ? (
-                        <button onClick={() => bookEvent(event.id)}>
+                        <button className="btn" onClick={() => bookEvent(event.id)}>
                           Book Ticket
                         </button>
                       ) : (

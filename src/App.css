@@ -1,23 +1,28 @@
-/* App Container */
-.app-container {
+/* App.css */
+
+/* General Styles */
+body {
   font-family: Arial, sans-serif;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body{
-  background-color:pink;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-/* Login Form */
-.login-container {
+h1, h2 {
+  color: #333;
+}
+
+/* Login Form Styles */
+.login-form {
   max-width: 400px;
   margin: 0 auto;
-  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input {
+.input-field {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -25,6 +30,7 @@ input {
   border-radius: 5px;
 }
 
+/* Button Styles */
 .btn {
   padding: 10px 20px;
   background-color: #28a745;
@@ -32,55 +38,17 @@ input {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  align-items: center;
-
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 35%;
 }
 
 .btn:hover {
-  background-color: #218838;
+  background-color: grey;
 }
 
-/* Error Message */
-.error {
-  color: red;
-  margin-top: 10px;
-}
-
-/* Header Section */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-/* Event List */
-.event-list {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.event-item {
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  background-color: #f9f9f9;
-}
-
-.event-item h3 {
-  margin-top: 0;
-}
-
-.sold-out {
+/* Error Message Style */
+.error-message {
   color: red;
   font-weight: bold;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }

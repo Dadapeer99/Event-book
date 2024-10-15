@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Event-book/static/css/main.c9ea555a.css",
+    "main.js": "/Event-book/static/js/main.7ecb78cc.js",
+    "index.html": "/Event-book/index.html",
+    "main.c9ea555a.css.map": "/Event-book/static/css/main.c9ea555a.css.map",
+    "main.7ecb78cc.js.map": "/Event-book/static/js/main.7ecb78cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9ea555a.css",
+    "static/js/main.7ecb78cc.js"
+  ]
+}
